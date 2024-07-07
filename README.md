@@ -33,7 +33,7 @@ Before running the script, ensure you have the following installed:
 To run the script, use the following command:
 ```bash
 python shimmer_transact.py 'recipient_address'
-
+```
 
 Replace 'recipient_address' with the address to which you want to send the tokens.
 
