@@ -37,7 +37,7 @@ python shimmer_transact.py 'recipient_address'
 
 Replace 'recipient_address' with the address to which you want to send the tokens.
 
-Script Explanation
+## Script Explanation
 The script performs the following steps:
 
 Imports necessary libraries: Imports modules from the IOTA SDK and other necessary libraries for logging.
@@ -71,8 +71,8 @@ Prepare and send a transaction: Sets the Stronghold password, prepares the trans
 
 Sync again: Syncs the account again to update the balance.
 
-Contributing
+## Contributing
 Contributions are welcome! If you have any improvements or suggestions, feel free to fork the repository, make your changes, and submit a pull request.
 
-License
+## License
 This script is open-source and can be used by anyone under the MIT License.
