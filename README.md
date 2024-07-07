@@ -1,7 +1,6 @@
 # Shimmer-Transaction-Python
-This repository contains an example script demonstrating how to execute a native token transaction on the Shimmer network using the IOTA SDK. The script is written in Python and includes detailed comments to guide users through each step of the process
 
-This repository contains a Python script that demonstrates how to execute a native token transaction on the Shimmer network using the IOTA SDK. The script includes detailed comments and logging to help users understand each step of the process.
+This repository contains an example script demonstrating how to execute a native token transaction on the Shimmer network using the IOTA SDK. The script is written in Python and includes detailed comments to guide users through each step of the process.
 
 ## Prerequisites
 
@@ -34,7 +33,7 @@ Before running the script, ensure you have the following installed:
 To run the script, use the following command:
 ```bash
 python shimmer_transact.py 'recipient_address'
-
+Replace 'recipient_address' with the address to which you want to send the tokens.
 
 Script Explanation
 The script performs the following steps:
@@ -51,6 +50,17 @@ Initialize the Wallet instance: Configures the wallet with client options, coin 
 
 Access or create an account: Tries to access an existing account by alias, or creates a new one if it doesn't exist.
 
+python
+Copy code
+try:
+    # Try to access the existing account
+    account = wallet.get_account(account_alias)
+    print(f"Accessed existing account with alias '{account_alias}'")
+except Exception as e:
+    # If accessing the account fails, it likely doesn't exist, so create it
+    print(f"Account '{account_alias}' not found. Creating a new account...")
+    account = wallet.create_account(account_alias)
+    print(f"New account created with alias '{account_alias}'")
 Sync the account: Syncs the account with the Shimmer node to update its state.
 
 Check balance: Retrieves and prints the balance, including any native tokens.
@@ -58,3 +68,12 @@ Check balance: Retrieves and prints the balance, including any native tokens.
 Prepare and send a transaction: Sets the Stronghold password, prepares the transaction by specifying the recipient address, token ID, and amount, sends the transaction, and waits for it to be included in a block.
 
 Sync again: Syncs the account again to update the balance.
+
+## Contributing
+
+Contributions are welcome! If you have any improvements or suggestions, feel free to fork the repository, make your changes, and submit a pull request.
+
+## License
+
+This script is open-source and can be used by anyone under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
