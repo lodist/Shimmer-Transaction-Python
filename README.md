@@ -33,6 +33,8 @@ Before running the script, ensure you have the following installed:
 To run the script, use the following command:
 ```bash
 python shimmer_transact.py 'recipient_address'
+
+
 Replace 'recipient_address' with the address to which you want to send the tokens.
 
 Script Explanation
@@ -69,11 +71,8 @@ Prepare and send a transaction: Sets the Stronghold password, prepares the trans
 
 Sync again: Syncs the account again to update the balance.
 
-## Contributing
-
+Contributing
 Contributions are welcome! If you have any improvements or suggestions, feel free to fork the repository, make your changes, and submit a pull request.
 
-## License
-
-This script is open-source and can be used by anyone under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
+License
+This script is open-source and can be used by anyone under the MIT License.
