@@ -20,7 +20,7 @@ Before running the script, ensure you have the following installed:
 
 2. Install the required Python packages:
     ```bash
-    pip install iota-sdk boto3
+    pip install iota-sdk
     ```
 
 3. Update the script with your configuration:
