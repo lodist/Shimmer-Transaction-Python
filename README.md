@@ -34,3 +34,27 @@ Before running the script, ensure you have the following installed:
 To run the script, use the following command:
 ```bash
 python shimmer_transact.py 'recipient_address'
+
+
+Script Explanation
+The script performs the following steps:
+
+Imports necessary libraries: Imports modules from the IOTA SDK and other necessary libraries for logging.
+
+Configuration parameters: Sets up the configuration parameters, including node URL, account alias, Stronghold path, and password.
+
+Initialize the Stronghold secret manager: Manages the Stronghold file and its password.
+
+Create client options: Specifies the node URL for connecting to the Shimmer network.
+
+Initialize the Wallet instance: Configures the wallet with client options, coin type, and secret manager.
+
+Access or create an account: Tries to access an existing account by alias, or creates a new one if it doesn't exist.
+
+Sync the account: Syncs the account with the Shimmer node to update its state.
+
+Check balance: Retrieves and prints the balance, including any native tokens.
+
+Prepare and send a transaction: Sets the Stronghold password, prepares the transaction by specifying the recipient address, token ID, and amount, sends the transaction, and waits for it to be included in a block.
+
+Sync again: Syncs the account again to update the balance.
