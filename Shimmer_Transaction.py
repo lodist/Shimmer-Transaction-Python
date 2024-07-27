@@ -9,7 +9,7 @@ def shimmer_transact(recipient_address):
         StrongholdSecretManager,
         Wallet,
         ClientOptions,
-        SendNativeTokensParams,
+        SendNativeTokensParams
     )
         
     import logging
