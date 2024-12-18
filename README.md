@@ -14,8 +14,8 @@ Before running the script, ensure you have the following installed:
 
 1. Clone this repository to your local machine:
     ```bash
-    git clone https://github.com/<username>/ShimmerTransactionExample.git
-    cd ShimmerTransactionExample
+    git clone https://github.com/lodist/Shimmer-Transaction-Python.git
+    cd Shimmer-Transaction-Python
     ```
 
 2. Install the required Python packages:
